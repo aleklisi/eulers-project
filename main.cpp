@@ -4,16 +4,12 @@ using namespace std;
 
 int main()
 {
-    int suma_kwadratow = 0;
-    int kwadrat_sumy = 0;
-    int wynik;
-    for (int i = 1; i <= 100 ; i++)
+    int wynik = 0;
+    for (int i = 1; i < 10;i++ )
     {
-        suma_kwadratow += (i*i);
-        kwadrat_sumy += i;
+        if ((i%3 == 0) || (i%5 == 0))
+            wynik+=i;
     }
-    kwadrat_sumy *=kwadrat_sumy;
-    wynik = suma_kwadratow - kwadrat_sumy;
-    cout << "wynik to: " << wynik << endl;
+    cout << "Wynik to:" << wynik << endl;
     return 0;
 }
