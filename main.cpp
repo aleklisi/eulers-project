@@ -1,20 +1,19 @@
 #include <iostream>
-#include <math.h>
+
 using namespace std;
 
 int main()
 {
-    //double wynik;
-    for (int a = 500; a > 0; a--)
+    int suma_kwadratow = 0;
+    int kwadrat_sumy = 0;
+    int wynik;
+    for (int i = 1; i <= 100 ; i++)
     {
-        for (int b = a; b > 0; b--)
-        {
-            if (a+b+sqrt((a*a)+(b*b)) == 1000)
-            {
-                cout << "a: " << a << "b: " << b << endl;
-            }
-        }
+        suma_kwadratow += (i*i);
+        kwadrat_sumy += i;
     }
-    cout << "Hello world!" << endl;
+    kwadrat_sumy *=kwadrat_sumy;
+    wynik = suma_kwadratow - kwadrat_sumy;
+    cout << "wynik to: " << wynik << endl;
     return 0;
 }
