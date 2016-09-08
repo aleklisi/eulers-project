@@ -1,2 +1,3 @@
 # eulers-project
 eulers project problem solutions
+programs are made stryctly to solve a particular problem sam give only partial answer and some problem were solved on paper...
